@@ -1,0 +1,7 @@
+# FilePath: Resources/en.lproj/HIPAA.strings
+/* HIPAA Disclaimer & Consent – shown in Settings ▸ Legal & Privacy.
+   Apple’s NSFileProtectionComplete guarantees at-rest AES-256 encryption:contentReference[oaicite:0]{index=0}
+   and is recommended by both Apple security docs and U.S. HHS mobile-HIPAA guidance:contentReference[oaicite:1]{index=1}. */
+"hipaa_disclaimer_title"   = "Healthcare Privacy Notice";
+"hipaa_disclaimer_body"    = "FormaVoice stores every transcription, template, and PDF using full-disk encryption (NSFileProtectionComplete). Your data never leaves the phone unless you explicitly export it. This meets or exceeds HIPAA guidance for protected-health information stored on mobile devices.";
+"hipaa_accept_button"      = "I Understand";

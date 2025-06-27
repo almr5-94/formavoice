@@ -1,0 +1,8 @@
+// FilePath: Config/BuildSettings.xcconfig
+// Enables Link-Time Optimisation and strips unused symbols.
+// Large (>200 MB) GGUF moved to On-Demand Resources per App Store rules. :contentReference[oaicite:5]{index=5}
+
+SWIFT_STRICT_CONCURRENCY = complete          // Compile-time data-race checks. :contentReference[oaicite:6]{index=6}
+OTHER_LDFLAGS = -dead_strip
+LLVM_LTO = YES
+ENABLE_BITCODE = NO

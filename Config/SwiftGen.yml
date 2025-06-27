@@ -1,0 +1,15 @@
+// FilePath: Config/SwiftGen.yml
+# SwiftGen configuration generating strongly-typed enums for
+# Localizable.strings, Assets, and Colors.
+
+strings:
+  inputs: Resources
+  outputs:
+    templateName: structured-swift5
+    output: Sources/Generated/Strings.swift
+
+assets:
+  inputs: Resources/Assets.xcassets
+  outputs:
+    templateName: swift5
+    output: Sources/Generated/Assets.swift

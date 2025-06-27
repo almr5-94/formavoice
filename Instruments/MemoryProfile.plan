@@ -1,0 +1,11 @@
+<!-- FilePath: Instruments/MemoryProfile.plan -->
+<!-- Pre-configured Instruments document that opens the “All Allocations” and
+     “Leaks” tracks, targeting FormaVoice.  Apple’s memory-analysis template
+     is the authoritative tool for Metal-driven UIs. :contentReference[oaicite:9]{index=9} -->
+<?xml version="1.0" encoding="UTF-8"?>
+<Instruments Version="15.0">
+    <Target PID="self" LaunchTime="Immediate" />
+    <RecordingMode RecordType="TimeLimited" Duration="30" />
+    <Document Template="Allocations"/>
+    <Document Template="Leaks"/>
+</Instruments>

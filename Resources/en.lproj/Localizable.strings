@@ -1,0 +1,9 @@
+# FilePath: Resources/en.lproj/Localizable.strings
+/* Onboarding */
+"onboarding_privacy_title" = "Your voice never leaves your iPhone.";
+"onboarding_privacy_body"  = "FormaVoice performs all speech-to-text and form-filling offline, secured by complete data encryption.";
+/* Settings */
+"settings_low_memory_mode" = "Low-Memory Mode";
+"settings_live_tokens"     = "Display Live Tokens";
+/* Alerts */
+"alert_memory_warning"     = "Memory Almost Full.\nSwitching to a lighter model to keep things smooth.";

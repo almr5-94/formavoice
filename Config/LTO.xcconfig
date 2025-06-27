@@ -1,0 +1,7 @@
+// FilePath: Config/LTO.xcconfig
+// Enables monolithic link-time optimisation and symbol stripping.
+// Apple doc ref: build-settings “LLVM_LTO” & “OTHER_LDFLAGS = -dead_strip”. :contentReference[oaicite:7]{index=7}
+LLVM_LTO                      = YES
+SWIFT_OPTIMIZATION_LEVEL      = -Osize
+OTHER_LDFLAGS                 = -dead_strip
+STRIP_INSTALLED_PRODUCT       = YES

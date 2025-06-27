@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9DA544982E0F5BE5000F1741 /* llama.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD406A22E0F550B002616C7 /* llama.xcframework */; };
+		9DA544992E0F5BE5000F1741 /* llama.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD406A22E0F550B002616C7 /* llama.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DA5449F2E0F601C000F1741 /* whisper 2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA5449D2E0F5FF7000F1741 /* whisper 2.xcframework */; };
+		9DA544A02E0F601C000F1741 /* whisper 2.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9DA5449D2E0F5FF7000F1741 /* whisper 2.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9DFFBEC22E0AAD5700C3B914 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 9DFFBEC12E0AAD5700C3B914 /* ZIPFoundation */; };
+		9DFFBEC62E0AB1D200C3B914 /* AppMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFBEC32E0AB1D200C3B914 /* AppMain.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9DEBA3112E09E5DC000FDFCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -23,11 +32,173 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9DA5449A2E0F5BE5000F1741 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9DA544A02E0F601C000F1741 /* whisper 2.xcframework in Embed Frameworks */,
+				9DA544992E0F5BE5000F1741 /* llama.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		9DEBA3012E09E5DB000FDFCD /* formavoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formavoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DEBA3102E09E5DC000FDFCD /* formavoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formavoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DEBA31A2E09E5DC000FDFCD /* formavoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formavoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA5449D2E0F5FF7000F1741 /* whisper 2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "whisper 2.xcframework"; sourceTree = "<group>"; };
+		9DD406A22E0F550B002616C7 /* llama.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = llama.xcframework; sourceTree = "<group>"; };
+		9DFFBEBC2E0AACDC00C3B914 /* formavoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formavoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DFFBEBD2E0AACDC00C3B914 /* formavoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formavoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DFFBEBE2E0AACDC00C3B914 /* formavoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = formavoiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DFFBEC32E0AB1D200C3B914 /* AppMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMain.swift; sourceTree = "<group>"; };
+		9DFFBEC42E0AB1D200C3B914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFFBEC92E0B5D5000C3B914 /* libwhisper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwhisper.a; path = Vendor/whisper.cpp/build/macos/src/libwhisper.a; sourceTree = "<group>"; };
+		9DFFBECB2E0B5DA100C3B914 /* libllama.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libllama.a; path = Vendor/llama.cpp/build/macos/src/libllama.a; sourceTree = "<group>"; };
+		9DFFBECD2E0B5F6500C3B914 /* libllama.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libllama.a; path = Vendor/llama.cpp/build/ios/src/libllama.a; sourceTree = "<group>"; };
+		9DFFBECF2E0B5F8400C3B914 /* libwhisper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwhisper.a; path = Vendor/whisper.cpp/build/ios/src/libwhisper.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9DFFBEBA2E0AAC7200C3B914 /* Exceptions for "Sources" folder in "formavoice" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Application/AppDelegate.swift,
+				Bridges/LLMBridge.mm,
+				Bridges/WhisperBridge.mm,
+				"Bridges/WhisperBridge+Unload.mm",
+				Components/AnimatedWaveform.swift,
+				Components/BannerView.swift,
+				Components/CardView.swift,
+				Components/FilledButton.swift,
+				Components/FormRow.swift,
+				Components/FormRowValidated.swift,
+				Components/Haptic.swift,
+				Components/HelpTooltip.swift,
+				Components/ToastCenter.swift,
+				Constants/ModelPaths.swift,
+				Coordinators/AppCoordinator.swift,
+				DesignSystem/AppTheme.swift,
+				DesignSystem/ColorTokens.swift,
+				DesignSystem/FontTokens.swift,
+				DesignSystem/GlobalStyle.swift,
+				DesignSystem/Spacing.swift,
+				Diagnostics/Log.swift,
+				Diagnostics/Logger.swift,
+				Environment/AppEnvironment.swift,
+				"Extensions/CGFloat+PDF.swift",
+				"Extensions/ModelContext+Shared.swift",
+				"Extensions/URL+SecureWrite.swift",
+				"Extensions/View+Accessible.swift",
+				Managers/BatteryWatcher.swift,
+				Managers/TemplateManager.swift,
+				Metal/WaveFragment.metal,
+				Metal/WaveVertex.metal,
+				Models/FormTemplate.swift,
+				Models/RecordingSession.swift,
+				Navigation/RootView.swift,
+				Navigation/Router.swift,
+				Onboarding/EnhancedOnboardingView.swift,
+				Onboarding/GDPRConsentView.swift,
+				Services/AudioProcessor.swift,
+				Services/CrashLogger.swift,
+				Services/LLMFormFillerService.swift,
+				Services/MemoryWarningHandler.swift,
+				Services/PDFGeneratorService.swift,
+				Services/TemplateValidationService.swift,
+				Services/TokenThrottle.swift,
+				Stubs/BridgesSwiftStub.swift,
+				Utilities/AppSizeCheck.swift,
+				"Utilities/Dispatch+MainSafe.swift",
+				Utilities/FocusableField.swift,
+				Utilities/KeyboardAvoidance.swift,
+				Utilities/LayoutAwareModifier.swift,
+				Utilities/StorageProtectionChecker.swift,
+				ViewModels/JSONCorrectionService.swift,
+				ViewModels/RecordingViewModel.swift,
+				Views/Dashboard/DashboardView.swift,
+				Views/ExportAllView.swift,
+				Views/PDFExportProgressView.swift,
+				Views/PDFPreviewView.swift,
+				Views/RecordingView.swift,
+				Views/ReviewAndEditView.swift,
+				Views/SettingsView.swift,
+				Views/TemplatePickerView.swift,
+				Views/WaveformView.swift,
+			);
+			target = 9DEBA3002E09E5DB000FDFCD /* formavoice */;
+		};
+		9DFFBEBB2E0AAC7200C3B914 /* Exceptions for "Sources" folder in "formavoiceTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Application/AppDelegate.swift,
+				Bridges/LLMBridge.mm,
+				Bridges/WhisperBridge.mm,
+				"Bridges/WhisperBridge+Unload.mm",
+				Components/AnimatedWaveform.swift,
+				Components/BannerView.swift,
+				Components/CardView.swift,
+				Components/FilledButton.swift,
+				Components/FormRow.swift,
+				Components/FormRowValidated.swift,
+				Components/Haptic.swift,
+				Components/HelpTooltip.swift,
+				Components/ToastCenter.swift,
+				Constants/ModelPaths.swift,
+				Coordinators/AppCoordinator.swift,
+				DesignSystem/AppTheme.swift,
+				DesignSystem/ColorTokens.swift,
+				DesignSystem/FontTokens.swift,
+				DesignSystem/GlobalStyle.swift,
+				DesignSystem/Spacing.swift,
+				Diagnostics/Log.swift,
+				Diagnostics/Logger.swift,
+				Environment/AppEnvironment.swift,
+				"Extensions/CGFloat+PDF.swift",
+				"Extensions/ModelContext+Shared.swift",
+				"Extensions/URL+SecureWrite.swift",
+				"Extensions/View+Accessible.swift",
+				Managers/BatteryWatcher.swift,
+				Managers/TemplateManager.swift,
+				Metal/WaveFragment.metal,
+				Metal/WaveVertex.metal,
+				Models/FormTemplate.swift,
+				Models/RecordingSession.swift,
+				Navigation/RootView.swift,
+				Navigation/Router.swift,
+				Onboarding/EnhancedOnboardingView.swift,
+				Onboarding/GDPRConsentView.swift,
+				Services/AudioProcessor.swift,
+				Services/CrashLogger.swift,
+				Services/LLMFormFillerService.swift,
+				Services/MemoryWarningHandler.swift,
+				Services/PDFGeneratorService.swift,
+				Services/TemplateValidationService.swift,
+				Services/TokenThrottle.swift,
+				Stubs/BridgesSwiftStub.swift,
+				Utilities/AppSizeCheck.swift,
+				"Utilities/Dispatch+MainSafe.swift",
+				Utilities/FocusableField.swift,
+				Utilities/KeyboardAvoidance.swift,
+				Utilities/LayoutAwareModifier.swift,
+				Utilities/StorageProtectionChecker.swift,
+				ViewModels/JSONCorrectionService.swift,
+				ViewModels/RecordingViewModel.swift,
+				Views/Dashboard/DashboardView.swift,
+				Views/ExportAllView.swift,
+				Views/PDFExportProgressView.swift,
+				Views/PDFPreviewView.swift,
+				Views/RecordingView.swift,
+				Views/ReviewAndEditView.swift,
+				Views/SettingsView.swift,
+				Views/TemplatePickerView.swift,
+				Views/WaveformView.swift,
+			);
+			target = 9DEBA30F2E09E5DC000FDFCD /* formavoiceTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9DEBA3032E09E5DB000FDFCD /* formavoice */ = {
@@ -45,6 +216,15 @@
 			path = formavoiceUITests;
 			sourceTree = "<group>";
 		};
+		9DFFBDFF2E0AAC7200C3B914 /* Sources */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9DFFBEBA2E0AAC7200C3B914 /* Exceptions for "Sources" folder in "formavoice" target */,
+				9DFFBEBB2E0AAC7200C3B914 /* Exceptions for "Sources" folder in "formavoiceTests" target */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +232,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFFBEC22E0AAD5700C3B914 /* ZIPFoundation in Frameworks */,
+				9DA5449F2E0F601C000F1741 /* whisper 2.xcframework in Frameworks */,
+				9DA544982E0F5BE5000F1741 /* llama.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,18 +261,35 @@
 				9DEBA3032E09E5DB000FDFCD /* formavoice */,
 				9DEBA3132E09E5DC000FDFCD /* formavoiceTests */,
 				9DEBA31D2E09E5DC000FDFCD /* formavoiceUITests */,
-				9DEBA3022E09E5DB000FDFCD /* Products */,
+				9DFFBDFF2E0AAC7200C3B914 /* Sources */,
+				9DFFBEBC2E0AACDC00C3B914 /* formavoice.app */,
+				9DFFBEBD2E0AACDC00C3B914 /* formavoiceTests.xctest */,
+				9DFFBEBE2E0AACDC00C3B914 /* formavoiceUITests.xctest */,
+				9DFFBEC52E0AB1D200C3B914 /* AppExecutable */,
+				9DFFBEC82E0B5D5000C3B914 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9DEBA3022E09E5DB000FDFCD /* Products */ = {
+		9DFFBEC52E0AB1D200C3B914 /* AppExecutable */ = {
 			isa = PBXGroup;
 			children = (
-				9DEBA3012E09E5DB000FDFCD /* formavoice.app */,
-				9DEBA3102E09E5DC000FDFCD /* formavoiceTests.xctest */,
-				9DEBA31A2E09E5DC000FDFCD /* formavoiceUITests.xctest */,
+				9DFFBEC32E0AB1D200C3B914 /* AppMain.swift */,
+				9DFFBEC42E0AB1D200C3B914 /* Info.plist */,
 			);
-			name = Products;
+			path = AppExecutable;
+			sourceTree = "<group>";
+		};
+		9DFFBEC82E0B5D5000C3B914 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5449D2E0F5FF7000F1741 /* whisper 2.xcframework */,
+				9DD406A22E0F550B002616C7 /* llama.xcframework */,
+				9DFFBECF2E0B5F8400C3B914 /* libwhisper.a */,
+				9DFFBECB2E0B5DA100C3B914 /* libllama.a */,
+				9DFFBECD2E0B5F6500C3B914 /* libllama.a */,
+				9DFFBEC92E0B5D5000C3B914 /* libwhisper.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +302,7 @@
 				9DEBA2FD2E09E5DB000FDFCD /* Sources */,
 				9DEBA2FE2E09E5DB000FDFCD /* Frameworks */,
 				9DEBA2FF2E09E5DB000FDFCD /* Resources */,
+				9DA5449A2E0F5BE5000F1741 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -112,9 +313,10 @@
 			);
 			name = formavoice;
 			packageProductDependencies = (
+				9DFFBEC12E0AAD5700C3B914 /* ZIPFoundation */,
 			);
 			productName = formavoice;
-			productReference = 9DEBA3012E09E5DB000FDFCD /* formavoice.app */;
+			productReference = 9DFFBEBC2E0AACDC00C3B914 /* formavoice.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9DEBA30F2E09E5DC000FDFCD /* formavoiceTests */ = {
@@ -137,7 +339,7 @@
 			packageProductDependencies = (
 			);
 			productName = formavoiceTests;
-			productReference = 9DEBA3102E09E5DC000FDFCD /* formavoiceTests.xctest */;
+			productReference = 9DFFBEBD2E0AACDC00C3B914 /* formavoiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		9DEBA3192E09E5DC000FDFCD /* formavoiceUITests */ = {
@@ -155,12 +357,13 @@
 			);
 			fileSystemSynchronizedGroups = (
 				9DEBA31D2E09E5DC000FDFCD /* formavoiceUITests */,
+				9DFFBDFF2E0AAC7200C3B914 /* Sources */,
 			);
 			name = formavoiceUITests;
 			packageProductDependencies = (
 			);
 			productName = formavoiceUITests;
-			productReference = 9DEBA31A2E09E5DC000FDFCD /* formavoiceUITests.xctest */;
+			productReference = 9DFFBEBE2E0AACDC00C3B914 /* formavoiceUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -195,8 +398,11 @@
 			);
 			mainGroup = 9DEBA2F82E09E5DB000FDFCD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9DFFBEC02E0AAD5700C3B914 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9DEBA3022E09E5DB000FDFCD /* Products */;
+			productRefGroup = 9DEBA2F82E09E5DB000FDFCD;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -236,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DFFBEC62E0AB1D200C3B914 /* AppMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +607,7 @@
 				DEVELOPMENT_TEAM = CHZPP8J8LH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = AppExecutable/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,6 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "abu-aabid.formavoice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,6 +646,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "abu-aabid.formavoice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,6 +768,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9DFFBEC02E0AAD5700C3B914 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.19;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9DFFBEC12E0AAD5700C3B914 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9DFFBEC02E0AAD5700C3B914 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9DEBA2F92E09E5DB000FDFCD /* Project object */;
 }

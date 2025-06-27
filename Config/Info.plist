@@ -1,0 +1,8 @@
+<!-- FilePath: Config/Info.plist additions -->
+<!-- Ensures compliance with App Store human-readable permission prompts. -->
+<key>NSMicrophoneUsageDescription</key>
+<string>FormaVoice needs access to record your dictation and fill forms.</string>
+<key>LSSupportsOpeningDocumentsInPlace</key>
+<true/>
+<key>UIFileSharingEnabled</key>
+<true/><!-- Allows Finder/iTunes side-load of new GGUF models. -->

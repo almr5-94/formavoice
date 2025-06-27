@@ -1,0 +1,14 @@
+{
+  "dataCategories": [
+    {
+      "dataCategory": "None",
+      "dataTypes": [],
+      "purpose": [],
+      "permissions": [],
+      "associatedWithUser": false,
+      "linkedToUser": false
+    }
+  ],
+  "privacyPolicyUrl": "https://formavoice.example.com/privacy",
+  "tracking": false
+}

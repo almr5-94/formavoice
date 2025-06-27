@@ -1,0 +1,6 @@
+# FilePath: Hooks/post-checkout
+# Git hook that re-generates README badges and runs swift-format automatically.
+
+#!/usr/bin/env bash
+python3 Scripts/badge_gen.py
+bash Scripts/run-swift-format.sh

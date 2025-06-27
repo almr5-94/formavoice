@@ -1,0 +1,34 @@
+default_platform(:ios)
+
+platform :ios do
+  lane :release_pipeline do
+    clean_build_artifacts
+
+    # 1️⃣ Capture screenshots for App Store submission.
+    snapshot(
+      devices: ['iPhone 15 Pro'],
+      languages: ['en-US'],
+      scheme: 'FormaVoiceRelease',
+      erase_simulator: true
+    )
+
+    # 2️⃣ Build archive and upload to TestFlight.
+    ipa = gym(
+      scheme: 'FormaVoiceRelease',
+      export_options: 'Config/Export.plist'
+    )
+
+    pilot(ipa: ipa)
+
+    # 3️⃣ Upload dSYM symbol files for crash reports.
+    upload_symbols_to_crashlytics(
+      gsp_path: 'GoogleService-Info.plist', # Remove if not using Crashlytics
+      dsym_path: '**/*.dSYM.zip'
+    )
+
+    # 4️⃣ Upload zero-collection privacy details.
+    upload_app_privacy_details_to_app_store(
+      privacy_details: 'fastlane/app_privacy.json'
+    )
+  end
+end
